@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout_background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/addbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Add"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/primary"
+        android:textColor="#FFFFFF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
